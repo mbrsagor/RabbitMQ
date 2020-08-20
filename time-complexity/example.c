@@ -2,7 +2,8 @@
 
 int main()
 {
-    int i, j, n, count = 15;
+    int i, j, n, count;
+    n = 2;
     count = 0;
 
     for (i = 0; i <= n; i++)
