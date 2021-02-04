@@ -9,11 +9,12 @@
 - If you know about any programing language like C, C++, Java it will be plus point.
 
 #### Table of contents.
-- Python Default data-structures
+- Built-in Data Structures
   - List
   - Dictionary
   - Tuple
   - Set
+  - strings
 
 - Dictionaries, Maps, and Hash Tables
 - Array Data Structures
@@ -22,3 +23,20 @@
 - Stacks (LIFOs)
 - Queues (FIFOs)
 - Priority Queues
+
+- User-Defined Data Structures
+  - Arrays vs. List
+  - List Comprehension
+  - Stack
+  - Queue
+  - Trees
+  - Linked Lists
+  - Graphs
+  - HashMaps
+ 
+ Bonus
+ - OOP
+   - Class
+   - Method
+   - Constructor
+   - Inheritance 
