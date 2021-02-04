@@ -7,6 +7,12 @@
 - 1st you should know python syntax.
 - You should complete basic knowledge of Python.
 - If you know about any programing language like C, C++, Java it will be plus point.
+```python
+x = 3+4j < 5+7j
+print(x)
+```
+> TypeError: `<` not supported between instances of `complex` and `complex`
+
 
 #### Table of contents.
 - Built-in Data Structures
@@ -34,9 +40,9 @@
   - Graphs
   - HashMaps
  
- Bonus
+###### Bonus
  - OOP
    - Class
    - Method
    - Constructor
-   - Inheritance 
+   - Inheritance
