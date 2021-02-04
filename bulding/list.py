@@ -31,3 +31,6 @@ print(fruits)
 li2 = ["Java", "python", "C++"]
 fruits.extend(li2)
 print(fruits)
+
+for fruit in fruits:
+    print(fruit)
