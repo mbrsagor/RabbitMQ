@@ -12,3 +12,21 @@ def ordinary():
 
 
 ordinary()
+
+
+# V2
+def uppercase_decorator(function):
+    def wrapper():
+        func = function()
+        make_uppercase = func.upper()
+        return make_uppercase
+
+    return wrapper
+
+
+@uppercase_decorator
+def say_hi():
+    return "Hello there"
+
+
+print(say_hi())
