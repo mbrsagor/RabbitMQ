@@ -1,18 +1,37 @@
 # Binary search
-def binary_search(item_list, item):
-    first = 0
-    last = len(item_list) - 1
-    found = None
-    while first <= last and not found:
-        mid = (first + last) // 2
-        if item_list[mid] == item:
-            found = f"The item is found: {item}"
+def binarySearch(arr, l, r, x):
+    # Check base case
+    if r >= l:
+
+        mid = l + (r - l) // 2
+
+        # If element is present at the middle itself
+        if arr[mid] == x:
+            return mid
+
+        # If element is smaller than mid, then it
+        # can only be present in left subarray
+        elif arr[mid] > x:
+            return binarySearch(arr, l, mid - 1, x)
+
+        # Else the element can only be present
+        # in right subarray
         else:
-            if item < item_list[mid]:
-                last = mid - 1
-            else:
-                first = mid + 1
-    return found
+            return binarySearch(arr, mid + 1, r, x)
+
+    else:
+        # Element is not present in the array
+        return -1
 
 
-print(binary_search([11, 22, 30, 33, 40, 44, 55, 60, 66, 77, 80, 88, 99], 303))
+# Driver Code
+arr = [2, 3, 4, 10, 40]
+x = 10
+
+# Function call
+result = binarySearch(arr, 0, len(arr) - 1, x)
+
+if result != -1:
+    print("Element is present at index % d" % result)
+else:
+    print("Element is not present in array")
