@@ -46,3 +46,8 @@ print(x)
    - Method
    - Constructor
    - Inheritance
+
+
+###### Others:
+QRCode:
+```pip install qrcode```
