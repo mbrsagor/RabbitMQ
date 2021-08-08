@@ -1,5 +1,4 @@
 import qrcode
-from csv import DictReader
 
 qr = qrcode.QRCode(
     version=1,
@@ -7,9 +6,9 @@ qr = qrcode.QRCode(
     box_size=5,
     border=4,
 )
-data = 'Peppermint. Uses: indigestion, nausea. Steep time: 5-10 mins.'
+data = 'https://github.com/mbrsagor'
 qr.add_data(data)
 qr.make(fit=True)
 
 img = qr.make_image(fill_color="black", back_color="white")
-img.save('peppermint.png')
+img.save('github.png')
