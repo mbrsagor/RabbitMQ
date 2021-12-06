@@ -11,6 +11,14 @@
 x = 3+4j < 5+7j
 print(x)
 ```
+
+```python
+for x in range(6):
+  if x == 3: break
+  print(x)
+else:
+  print("Finally finished!")
+```
 > TypeError: `<` not supported between instances of `complex` and `complex`
 
 ```python
