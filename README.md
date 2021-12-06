@@ -13,6 +13,10 @@ print(x)
 ```
 > TypeError: `<` not supported between instances of `complex` and `complex`
 
+```python
+x = 200
+print(isinstance(x, int))
+```
 
 #### Table of contents.
 - Built-in Data Structures
@@ -51,3 +55,12 @@ print(x)
 ###### Others:
 QRCode:
 ```pip install qrcode```
+
+> Python divides the operators in the following groups:
+- Arithmetic operators
+- Assignment operators
+- Comparison operators
+- Logical operators
+- Identity operators
+- Membership operators
+- Bitwise operators
