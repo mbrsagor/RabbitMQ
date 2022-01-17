@@ -1,5 +1,5 @@
 # DataStructures
-> University data structures and algorithms programming language.
+> University data structures and algorithms programming language where all written by python programming.. Basically, I'm teaching my friends and some brothers about the basic concept of Data structure and algorithms.
 
 ###### Common Python Data Structures (Guide)
 
@@ -63,12 +63,3 @@ print(isinstance(x, int))
 ###### Others:
 QRCode:
 ```pip install qrcode```
-
-> Python divides the operators in the following groups:
-- Arithmetic operators
-- Assignment operators
-- Comparison operators
-- Logical operators
-- Identity operators
-- Membership operators
-- Bitwise operators
