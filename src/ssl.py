@@ -57,3 +57,7 @@ link_list.add(50)
 link_list.delete(20)
 link_list.delete(50)
 print(link_list)
+
+
+# Source: https://www.section.io/engineering-education/linked-list-data-structure-python/
+# https://stackabuse.com/linked-lists-in-detail-with-python-examples-single-linked-lists
