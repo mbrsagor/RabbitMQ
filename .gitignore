@@ -3,4 +3,6 @@ venv
 .vscode
 .DS_Store
 __pycache__/
+migrations
 .env
+db.sqlite3

@@ -1,65 +1,34 @@
-# DataStructures
-> University data structures and algorithms programming language where all written by python programming.. Basically, I'm teaching my friends and some brothers about the basic concept of Data structure and algorithms.
+# RabbitMQ
+> RabbitMQ is the most widely deployed open source message broker.
 
-###### Common Python Data Structures (Guide)
+###### You have to must install below in your system.
 
 ### Prerequisites
-- 1st you should know python syntax.
-- You should complete basic knowledge of Python.
-- If you know about any programing language like C, C++, Java it will be plus point.
-```python
-x = 3+4j < 5+7j
-print(x)
+- Python
+- Django
+
+#### Setup:
+
+The following steps will walk you thru installation on a Mac. I think linux should be similar. It's also possible to develop on a Windows machine, but I have not documented the steps. If you've developed django apps on Windows, you should have little problem getting up and running.
+
+```bash
+git clone https://github.com/mbrsagor/RabbitMQ.git
+cd RabbitMQ
+virtualenv venv --python=python3.8
+pip install -r requirements.txt
 ```
 
-```python
-for x in range(6):
-  if x == 3: break
-  print(x)
-else:
-  print("Finally finished!")
-```
-> TypeError: `<` not supported between instances of `complex` and `complex`
+###### Then create ``.env`` file and paste code from `sample.env` file and add validate information.
 
-```python
-x = 200
-print(isinstance(x, int))
+-------------------------------------------
+```bash
+|--> .sample.env
+|--> .env
 ```
 
-#### Table of contents.
-- Built-in Data Structures
-  - List
-  - Dictionary
-  - Tuple
-  - Set
-  - strings
-
-- Dictionaries, Maps, and Hash Tables
-- Array Data Structures
-- Records, Structs, and Data Transfer Objects
-- Sets and Multisets
-- Stacks (LIFOs)
-- Queues (FIFOs)
-- Priority Queues
-
-- User-Defined Data Structures
-  - Arrays vs. List
-  - List Comprehension
-  - Stack
-  - Queue
-  - Trees
-  - Linked Lists
-  - Graphs
-  - HashMaps
- 
-###### Bonus
- - OOP
-   - Class
-   - Method
-   - Constructor
-   - Inheritance
-
-
-###### Others:
-QRCode:
-```pip install qrcode```
+#### Run:
+```bash
+./manage.py makemigrations && manage.py migrate
+./manage.py createsuperuser
+./manage.py runserver
+```
