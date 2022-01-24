@@ -5,7 +5,7 @@ from django.views.generic import ListView
 from django.shortcuts import redirect
 
 from .forms import GenerateRandomUserForm
-from .tasks import create_random_user_accounts
+from .tasks import create_random_users
 
 
 class GenerateRandomUserView(FormView):
@@ -14,9 +14,9 @@ class GenerateRandomUserView(FormView):
 
     def form_valid(self, form):
         total = form.cleaned_data.get('total')
-        create_random_user_accounts.delay(total)
+        create_random_users.delay(total)
         messages.success(self.request, 'We are generating your random users! Wait a moment and refresh this page.')
-        return redirect('/')
+        return redirect('/users/')
 
 
 class UserListView(ListView):

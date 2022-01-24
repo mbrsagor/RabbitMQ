@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Generate User</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
-
-
-<form method="POST">
-    {% csrf_token %}
-    {{ form }}
-    <button type="submit">Generate User</button>
-</form>
-
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 offset-3">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h6 class="card-title">Generate random user</h6>
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        {% csrf_token %}
+                        {{ form }}
+                        <button class="btn btn-success btn-sm" type="submit">Generate User</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
