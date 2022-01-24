@@ -9,3 +9,7 @@ class GenerateRandomUserForm(forms.Form):
             MaxValueValidator(500)
         ]
     )
+
+
+class JobForm(forms.Form):
+    job_name = forms.CharField(label='Job name', required=True)
