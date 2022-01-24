@@ -4,8 +4,8 @@ from django.views.generic.edit import FormView
 from django.views.generic import ListView
 from django.shortcuts import redirect
 
-from .forms import GenerateRandomUserForm
-from .tasks import create_random_users
+from .forms import GenerateRandomUserForm, TodoForm
+from .tasks import create_random_users, create_todo
 
 
 class GenerateRandomUserView(FormView):
@@ -21,5 +21,14 @@ class GenerateRandomUserView(FormView):
 
 class UserListView(ListView):
     model = User
+    ordering = '-id'
     context_object_name = 'users'
     template_name = 'user_list.html'
+
+
+class TaskCreateView(FormView):
+    template_name = 'core/create_todo.html'
+    form_class = TodoForm
+
+    def form_valid(self, form):
+        pass

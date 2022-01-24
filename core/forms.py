@@ -11,5 +11,7 @@ class GenerateRandomUserForm(forms.Form):
     )
 
 
-class JobForm(forms.Form):
-    job_name = forms.CharField(label='Job name', required=True)
+class TodoForm(forms.Form):
+    title = forms.CharField(label='Todo Title', required=True)
+    description = forms.CharField(label='Todo Description', required=True)
+    # is_active = forms.BooleanField(required=False)
