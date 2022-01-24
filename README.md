@@ -6,6 +6,7 @@
 ### Prerequisites
 - Python
 - Django
+- RabbitMQ-server
 
 #### Setup:
 
@@ -31,4 +32,10 @@ pip install -r requirements.txt
 ./manage.py makemigrations && manage.py migrate
 ./manage.py createsuperuser
 ./manage.py runserver
+```
+
+##### Run RabbitMQ:
+```
+rabbitmq-server start
+celery -A RabbitMQ worker -l info
 ```
